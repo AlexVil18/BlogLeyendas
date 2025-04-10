@@ -1,0 +1,83 @@
+/* Estilos Universales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #1A1A1D;
+    padding-top: 60px; /* para que no tape el nav fijo */
+  }
+  
+  /* Barra de navegación */
+
+  
+
+  /* Portada */
+  .portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A64D79;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .titulo-principal {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .descripcion-portada {
+    font-size: 1.2rem;
+    max-width: 800px;
+  }
+  
+  .imagen-portada-img {
+    margin-top: 30px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Sección de artículos */
+  .seccion-articulos {
+    padding: 40px 20px;
+    background-color: #F5F5F5;
+  }
+  
+  .titulo-seccion {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #6A1E55;
+    text-align: center;
+  }
+  
+  .articulo {
+    background-color: #fff;
+    border-left: 6px solid #6A1E55;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .titulo-articulo {
+    font-size: 1.5rem;
+    color: #3B1C32;
+    margin-bottom: 10px;
+  }
+  
+  .imagen-articulo {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
