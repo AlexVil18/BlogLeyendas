@@ -13,24 +13,17 @@
 </head>
 
 <body>
+    
+    <div id="nav-placeholder"></div>
+
     <header class="encabezdo">
         <nav class="barra-navegacion">
         </nav>
     </header>
-    <nav class="barra-navegacion">
-        <nav>
-            <h1>Supersticiones Curiosas</h1>
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="about.html">Sobre nosotros</a></li>
-              <li><a href="Contactenos.html">Contacto</a></li>
-            </ul>
-          </nav>
-    </nav>
     </header>
-    <!-- Contenido principal -->
+    
     <main class="contenido-principal">
-        <!-- Sección principal con bienvenida y articulos-->
+        
         <section class="portada">
             <div class="texto-portada">
                 <h1 class="titulo-principal">Bienvenidos al Blog de Supersticiones y Leyendas</h1>
@@ -43,7 +36,7 @@
             </div>
         </section>
 
-        <!-- Sección de artículos destacados -->
+     
         <section class="seccion-articulos">
             <h2 class="titulo-seccion">Reseñas Históricas y Supersticiones Populares</h2>
             <article class="articulo">
@@ -76,29 +69,27 @@
             </article>
         </section>
     </main>
-    <!-- Pie de página -->
-    <footer class="pie-pagina">
-        <div class='footer_div'>
-            <h3>Desarrollado por equipo HorrorDev:</h3>
-            <ul>
-                <li>Ana Reyes</li>
-                <li>Andrés Cano</li>
-                <li>John Govea</li>
-                <li>Juan Martínez</li>
-                <li>Lizeth Paiva</li>
-            </ul>
-        </div>
-        <div class='footer_div'>
-            <h3>Contacto</h3>
-        <address>
-            <a href="equipo@blog_supersticiones.com">equipo@blog_supersticiones.com</a>
-        </address>
-        </div>
-        <div class='footer_div'>
-            <h3>Proyecto</h3>
-            <p>Blog Supersticiones Curiosas</p>
-            <a href="https://www.goodreads.com/list/show/50.Best_Horror_Books_of_All_Time">Recomendaciones libros terror</a>
-        </div>
-    </footer>
+
+    
+    <div id="footer-placeholder"></div>
+
+    
+
+    
+    <script>
+        fetch('nav.html').then(r => r.text()).then(d => {
+            document.getElementById('nav-placeholder').innerHTML = d;
+        });
+        fetch('footer.html').then(r => r.text()).then(d => {
+            document.getElementById('footer-placeholder').innerHTML = d;
+        });
+
+        document.getElementById('form-contacto')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('mensaje-confirmacion').style.display = 'block';
+            this.reset();
+        });
+    </script>
 </body>
+
 </html>
