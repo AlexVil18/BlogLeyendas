@@ -6,8 +6,8 @@ Este es un proyecto colaborativo creado como parte del bootcamp de desarrollo Fu
 
 ## 👥 Integrantes del Proyecto
 
-- **Lizeth Martínez** – Encargada del `nav`
-- **Juan M.** – Encargado del `footer`
+- **Lizeth Paiva** – Encargada del `nav`
+- **Juan Martinez** – Encargado del `footer`
 - **John Govea** – Sección de `contacto`
 - **Andrés Cano** – Página de `inicio`
 - **Ana Reyes** – Página `sobre nosotros`
