@@ -43,7 +43,13 @@
   <div id="footer-placeholder"></div>
 
   <script>
-
+    
+    fetch('nav.html').then(r => r.text()).then(d => {
+      document.getElementById('nav-placeholder').innerHTML = d;
+    });
+    fetch('footer.html').then(r => r.text()).then(d => {
+      document.getElementById('footer-placeholder').innerHTML = d;
+    });
    
     document.getElementById('form-contacto').addEventListener('submit', function(e) {
       e.preventDefault();
